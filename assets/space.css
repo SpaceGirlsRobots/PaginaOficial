@@ -1,0 +1,330 @@
+*{
+   box-sizing: border-box
+}
+body{
+   font-family: 'Roboto', sans-serif;
+   font-size: 1em;
+}
+button{
+   cursor: pointer;
+}
+.no-scroll{
+   height: 100%;
+   overflow: hidden;
+}
+.container{
+   widows: 75%;
+   margin:  0 auto;
+   padding: 0.7em;
+   max-width: 1200px;
+   min-width: 200px;
+}
+
+.coverSpace{
+   padding: 4em;
+}
+.logoSpace{
+   width: 40%;
+   margin: 0 auto;
+}
+.logoSpace img{
+   width: 100%;
+   display: block;
+   margin: 0 auto
+}
+@media screen and (max-width: 500px){
+   .logoSpace{
+      width: 90%;
+   }
+   .coverSpace{
+      padding: 4em 0;
+   }
+   .minSectionText{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+   }
+}
+.textCoverSpace{
+   margin: 0 auto;
+   width: 50%;
+   margin-top: 2em;
+   font-size: 1.1em;
+}
+.textCoverSpace p{
+   line-height: 1.3;
+   text-align: center;
+   color: white
+}
+
+.marsSection{
+   padding: 10em 0;
+   background-color: #e2725b;
+   color: white;
+}
+
+
+.minSectionText{
+   width: 30%;
+   min-width: 180px;
+}
+
+.teamSpace{
+   background-color: rgba(121, 113, 234, 0.1);
+   padding: 4em 0;
+   position: relative;
+   width: 100%;
+}
+.waveBottom{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 200px;
+   background-image: url(img/wave-bottom.svg);
+   background-size: cover;
+}
+.spaceTitle{
+   display: flex;
+   justify-content: center;
+}
+.titleA{
+   text-align: center;
+   border-bottom: 1px solid #071472;
+   padding: 0.4em 2.5em;
+   font-family: 'Bungee', cursive;
+   display: inline-block;
+   animation: colorText 1500ms infinite;
+   margin: 0 auto;
+}
+@keyframes colorText{
+   from{
+      color: #0e26d4;
+      border-bottom-color: #071472;
+   }
+   to{
+      color: #071472;
+      border-bottom-color: #0e26d4
+   }
+}
+.teamContainer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-wrap: wrap;
+   z-index: 2;
+}
+.memberCard{
+   width: 22%;
+   margin: 0 3%;
+   background-color: white;
+   border-radius: 8px;
+   padding: 2em 1em;
+   margin-top: 2em;
+   box-shadow: 1px 2px 2px 2px rgba(46, 39, 150, 0.2);
+   z-index: 2;
+}
+.imgMember, .imgModal{
+   width: 100px;
+   border-radius: 50%;
+   height: 100px;
+   overflow: hidden;
+   margin: 0 auto;
+   text-align: center;
+}
+.imgMember:hover{
+   box-shadow: 0 1px 2px 2px rgba(121, 113, 234, 0.4);
+}
+.imgMember img, .imgModal img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0.1);
+}
+.nameMember p{
+   margin-bottom: 5px;
+   font-size: 1em;
+   color: #283E51;
+   font-weight: 500;
+   text-align: center;
+   cursor: pointer;
+}
+.nameMember span{
+   margin-bottom: 20px;
+   font-size: 0.8em;
+   color: #363636;
+   display: block;
+   text-align: center;
+   cursor: pointer;
+}
+.nameMember span.nothing{
+   opacity: 0;
+}
+.aboutMember{
+   font-size: 0.94em;
+   color: #717172;
+   text-align: center;
+   line-height: 1.4em;
+   cursor: pointer;
+}
+.aboutMember p{
+   margin-bottom: 0;
+}
+p.more{
+   text-align: right;
+   font-size: 0.8em;
+   margin-top: 10px;
+   opacity: 0;
+   transition: all 420ms;
+}
+.elementLink{
+   cursor: pointer;
+}
+.elementLink:hover p.more{
+   opacity: 1;
+}
+
+
+.circuitSeparator{
+   background-color: rgba(29, 27, 104, 0.7);
+   background-image: url(img/board_back.jpg);
+   background-blend-mode: color-dodge;
+   padding: 3em 0;
+   background-attachment: fixed;
+}
+.storySection{
+   padding: 4em 0;
+}
+.visionMision{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.textContainer{
+   width: 50%;
+   padding: 1em 3em;
+   text-align: center;
+}
+.textContainer:first-child{
+   border-right: 1px solid #dee2e6;
+}
+.subtitlevision{
+   font-size: 1.3em;
+   font-weight: 500;
+   color: #5c7893;
+}
+
+
+.textVision{
+   font-size: 1em;
+   color: rgba(0, 0, 0, 0.5);
+}
+.reserved{
+   text-align: center;
+   color: grey;
+   font-size: 0.8em;
+}
+
+.modalTeam{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.backModalTeam{
+   background-color: rgba(250,250,250,0.8);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+.cardModalTeam{
+   width: 40%;
+   max-width: 520px;
+   border-radius: 5px;
+   position: relative;
+   background-color: white;
+   box-shadow: 0 2px 2px 2px rgba(121, 113, 234, 0.5);
+}
+@media screen and (max-width: 600px){
+   .modalTeam{
+      align-items: flex-start;
+      overflow: scroll;
+      background-color: rgba(250,250,250,0.8);
+   }
+   .cardModalTeam{
+      width: 95%;
+      margin: 2em 0;;
+   }
+   .backModalTeam{
+      background-color: transparent;
+   }
+   .waveBottom{
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-color: white;
+   }
+}
+.headerModalTeam{
+   width: 100%;
+   padding: 0.3em 1em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #dfdfdf;
+}
+.nameTeam{
+   font-size: 1em;
+   color: grey;
+   margin: 0;
+   font-weight: 500;
+}
+.closeModal{
+   font-size: 1.3em;
+   background-color: transparent;
+   border: transparent;
+   outline: none;
+   color: #9b9b9b
+}
+.bodyModalTeam{
+   padding: 1em;
+}
+.textModal{
+   margin-top: 20px;
+}
+.textModal p{
+   margin: 0;
+   font-size: 1em;
+   line-height: 1.4;
+   color: #8e8e8e;
+   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+   .memberCard{
+      width: 44%;
+   }
+   p.more{
+      opacity: 1;
+   }
+}
+@media screen and (max-width: 450px) {
+   .memberCard{
+      width: 90%;
+      margin: 1.5em 0;
+   }
+   .textContainer{
+      width: 100%;
+      border-bottom: 1px solid #dee2e6;
+   }
+   .textContainer:first-child{
+      border-right: none;
+   }
+}
