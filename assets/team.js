@@ -9,7 +9,7 @@ var temMate = [
 		"name": "Angie Rodríguez",
 		"img": "angie_shareni",
 		"job": "not",
-		"bio": "Desde que soy pequeña he tenido un gran apego a la tecnología, matemáticas y artes por lo que es lo que más me gusta hacer hasta la fecha. Me considero creativa y divertida por lo que trato de transmitir eso en todo lo que hago. Amo la física por lo que tengo considerado estudiar esta materia ya que se me hace muy interesante y lograré romper el estereotipo que las matemáticas, etc no son oara mujeres."
+		"bio": "Desde que soy pequeña he tenido un gran apego a la tecnología, matemáticas y artes por lo que es lo que más me gusta hacer hasta la fecha. Me considero creativa y divertida por lo que trato de transmitir eso en todo lo que hago. Amo la física por lo que tengo considerado estudiar esta materia ya que se me hace muy interesante y lograré romper el estereotipo que las matemáticas y ciencias duras no son para mujeres."
 	},
 	{
 		"name": "Africa Sahara",
@@ -27,7 +27,7 @@ var temMate = [
 		"name": "Aidé Cabrera",
 		"img": "aide_space",
 		"job": "asesora",
-		"bio": "Estudiante de ingeniería en telecomunicaciones. Soy organizadora para el Google Developer Group  GDG WonderCoders que tiene como objetivo acercar a más chicas a la tecnología y programación. <br><br> Fundadora del capítulo GirlUp UNAM, una iniciativa que busca que más adolescentes conozcan las bondades del mundo STEAM. Amo compartir cómo con  tecnología se puede cambiar el mundo."
+		"bio": "Estudiante de ingeniería en telecomunicaciones. Soy organizadora para el Google Developer Group  GDG WonderCoders que tiene como objetivo acercar a más chicas a la tecnología y programación. <br><br> Fundadora del capítulo GirlUp UNAM, una iniciativa que busca que más adolescentes conozcan las bondades del mundo STEAM. Amo compartir cómo con  tecnología podemos cambiar el mundo."
 	}
 ]
 
